@@ -1,0 +1,383 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    width: 360px;
+
+    background: #0b0f19;
+
+    color: #ffffff;
+
+    font-family:
+        Inter,
+        Arial,
+        sans-serif;
+}
+
+.app {
+    padding: 18px;
+}
+
+
+/* HEADER */
+
+.header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 18px;
+}
+
+.brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.logo {
+    width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: #1b2335;
+
+    font-size: 19px;
+}
+
+h1 {
+    margin: 0;
+
+    font-size: 17px;
+
+    font-weight: 700;
+}
+
+.brand span {
+    font-size: 11px;
+
+    color: #7d879b;
+}
+
+.status {
+    width: 9px;
+
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #36d399;
+
+    box-shadow:
+        0 0 10px rgba(
+            54,
+            211,
+            153,
+            0.7
+        );
+}
+
+
+/* TOTAL CARD */
+
+.total-card {
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #151d30,
+            #101625
+        );
+
+    border:
+        1px solid #202a40;
+
+    margin-bottom: 12px;
+}
+
+.label {
+    font-size: 10px;
+
+    font-weight: 700;
+
+    color: #748099;
+
+    letter-spacing: 1px;
+}
+
+.total-time {
+    margin-top: 5px;
+
+    font-size: 34px;
+
+    font-weight: 800;
+}
+
+.subtitle {
+    font-size: 11px;
+
+    color: #778298;
+}
+
+
+/* CURRENT WEBSITE */
+
+.current-card {
+    padding: 16px;
+
+    border-radius: 16px;
+
+    background: #111827;
+
+    border:
+        1px solid #202a40;
+
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 10px;
+
+    color: #69758b;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 14px;
+}
+
+.current-content {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.site-icon {
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #1d273a;
+
+    font-size: 21px;
+}
+
+.site-info {
+    flex: 1;
+}
+
+.site-name {
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.site-time {
+    margin-top: 3px;
+
+    color: #7e899e;
+
+    font-size: 11px;
+}
+
+.progress {
+    height: 5px;
+
+    margin-top: 15px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #20293a;
+}
+
+.progress-bar {
+    height: 100%;
+
+    width: 0%;
+
+    border-radius: 10px;
+
+    background: #6c7cff;
+
+    transition:
+        width 0.4s ease;
+}
+
+
+/* TOP WEBSITES */
+
+.websites-section {
+    margin-bottom: 12px;
+}
+
+.section-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    color: #69758b;
+
+    letter-spacing: 1px;
+}
+
+#siteCount {
+    letter-spacing: 0;
+
+    font-weight: 500;
+}
+
+
+/* WEBSITE ROW */
+
+.website {
+    display: flex;
+
+    align-items: center;
+
+    padding: 11px 5px;
+
+    border-bottom:
+        1px solid #171f2e;
+}
+
+.rank {
+    width: 22px;
+
+    color: #59657a;
+
+    font-size: 11px;
+}
+
+.website-icon {
+    width: 30px;
+
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-right: 9px;
+
+    border-radius: 9px;
+
+    background: #182135;
+
+    font-size: 14px;
+}
+
+.website-details {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.website-name {
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.mini-progress {
+    height: 3px;
+
+    margin-top: 5px;
+
+    overflow: hidden;
+
+    border-radius: 5px;
+
+    background: #1d2636;
+}
+
+.mini-progress-bar {
+    height: 100%;
+
+    background: #5668e8;
+
+    border-radius: 5px;
+}
+
+.website-duration {
+    margin-left: 10px;
+
+    color: #8a95a8;
+
+    font-size: 11px;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 15px;
+}
+
+#resetBtn {
+    width: 100%;
+
+    padding: 10px;
+
+    border: 0;
+
+    border-radius: 10px;
+
+    background: #151d2c;
+
+    color: #7f8ba1;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+#resetBtn:hover {
+    background: #1c2638;
+
+    color: #ffffff;
+}

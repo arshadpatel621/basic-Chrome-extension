@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FocusTrack</title>
+
+    <link
+        rel="stylesheet"
+        href="popup.css"
+    >
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <div class="brand">
+
+                <div class="logo">
+                    ⏱
+                </div>
+
+                <div>
+                    <h1>FocusTrack</h1>
+                    <span>Website Tracker</span>
+                </div>
+
+            </div>
+
+            <div
+                id="statusDot"
+                class="status active"
+            ></div>
+
+        </header>
+
+
+        <!-- Today's total -->
+
+        <section class="total-card">
+
+            <span class="label">
+                TODAY
+            </span>
+
+            <div
+                id="totalTime"
+                class="total-time"
+            >
+                0m
+            </div>
+
+            <span class="subtitle">
+                Total browsing time
+            </span>
+
+        </section>
+
+
+        <!-- Current website -->
+
+        <section class="current-card">
+
+            <div class="section-title">
+                CURRENT WEBSITE
+            </div>
+
+            <div class="current-content">
+
+                <div
+                    id="siteIcon"
+                    class="site-icon"
+                >
+                    🌐
+                </div>
+
+                <div class="site-info">
+
+                    <div
+                        id="currentSite"
+                        class="site-name"
+                    >
+                        Loading...
+                    </div>
+
+                    <div
+                        id="currentTime"
+                        class="site-time"
+                    >
+                        0m
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="progress">
+
+                <div
+                    id="currentProgress"
+                    class="progress-bar"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Top websites -->
+
+        <section class="websites-section">
+
+            <div class="section-header">
+
+                <span>
+                    TOP WEBSITES
+                </span>
+
+                <span id="siteCount">
+                    0 sites
+                </span>
+
+            </div>
+
+            <div
+                id="websiteList"
+                class="website-list"
+            >
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+
+        <footer>
+
+            <button id="resetBtn">
+
+                Reset Data
+
+            </button>
+
+        </footer>
+
+    </div>
+
+    <script src="popup.js"></script>
+
+</body>
+
+</html>
